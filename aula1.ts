@@ -128,7 +128,7 @@ arrayN.forEach((value, index, array) => {
     array[index] = value * 2;
 });
 
-console.log(arrayN);
+
 
 enum DiasDaSemana {
     SegundaFeira,
@@ -147,3 +147,17 @@ enum AgentesVava {
     Iniciador
 }
 
+
+let year:number = 101
+
+function solution(year: number): void{
+   let century:number = (year / 100)
+   
+   if (!(century % 1 === 0)){
+      century = Math.ceil(century)
+   }
+
+   
+}
+
+solution(year)

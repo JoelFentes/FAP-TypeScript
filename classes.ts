@@ -1,7 +1,7 @@
 import * as readline from 'readline-sync';
 
 
-
+/* 
 
 
 //1.
@@ -289,5 +289,5 @@ class Invoice {
     if (condition) {
         
     }
-}
+}*/
 
