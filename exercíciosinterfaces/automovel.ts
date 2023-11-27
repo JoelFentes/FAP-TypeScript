@@ -1,4 +1,4 @@
-export interface IAutomovel {
+/* export interface IAutomovel {
     modelo: string;
     ano: number;
     marca: string;
@@ -40,4 +40,50 @@ export class Moto implements IMoto {
     exibirModeloMoto():void{
         console.log(`${this.marca} ${this.modelo}`);       
     }
+} */
+
+export interface Engine {
+    start(): void;
+    stop(): void;
 }
+
+export class Car {
+    constructor(private engine:Engine){}
+
+    startCar(){
+        this.engine.start();
+    }
+
+    stopCar(){
+        this.engine.stop()
+    }
+}
+
+export class GasolineEngine implements Engine {
+    start(): void {
+        console.log(`Motor a gasolina ligado`);
+    }
+
+    stop(): void {
+        console.log(`Motor a gasolina desligado`); 
+    }
+}
+
+export class AlcoholEngine implements Engine {
+    start(): void {
+        console.log(`Motor a álcool ligado`);
+    }
+
+    stop(): void {
+        console.log(`Motor a álcool desligado`); 
+    }
+}
+
+
+const car = new Car(new GasolineEngine());
+const carA = new Car(new AlcoholEngine());
+
+car.startCar()
+car.stopCar()
+carA.startCar()
+carA.stopCar()
