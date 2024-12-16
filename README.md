@@ -6,10 +6,10 @@ Este repositório faz parte do programa de Formação Acelerada em Programação
 
 # Conteúdo
 
-Manipulação de Strings e Arrays
+1º - Manipulação de Strings e Arrays
 
-Estruturas de Controle: Uso de if, for, while e switch.
+2º - Estruturas de Controle: Uso de if, for, while e switch.
 
-Funções: Declaração e aplicação prática.
+3º - Funções: Declaração e aplicação prática.
 
-Orientação a Objetos: Classes, herança e interfaces.
+4º - Orientação a Objetos: Classes, herança e interfaces.
